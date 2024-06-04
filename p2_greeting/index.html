@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<title> Second App by Pranay </title>
+</head>
+
+<body style="background-color:lightgreen;">
+	<h1> Greeting App </h1>
+	<h2 id="msg" style="font-size:60px;"> </h2>
+	<script>
+		let msg= document.getElementById("msg");
+		let d = new Date();
+		let hr = d.getHours();
+		let res = "";
+
+		if (hr<12)
+			res = "Good Morning";
+		else if (hr<16)
+			res = "Good Afternoon";
+		else
+			res = "Good Evening";
+		msg.innerHTML = res;
+	</script>
+</body>
+
+</html>
